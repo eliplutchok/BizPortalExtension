@@ -1,0 +1,103 @@
+/* Main CSS styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+textarea#skus {
+    display: block;
+    max-width: 500px;
+    min-height: 100px;
+    width: 50%;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button#submit {
+    display: block;
+    max-width: 200px;
+    width: 90%;
+    padding: 5px 10px;
+    margin: 10px auto;
+    background-color: #44a1a0;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button#submit:hover {
+    background-color: #2c6d6a;
+}
+
+textarea#warehouses {
+    display: block;
+    max-width: 300px;
+    width: 70%;
+    height: 200px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Center the table on the page and set a width */
+#warehouses {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;  /* You can adjust the width as needed */
+}
+
+/* Add a black border around table cells and center the text */
+#warehouses th, #warehouses td {
+    border: .5px solid rgb(179, 177, 177);
+    text-align: center;
+    padding: 2px;  /* Reduce padding to decrease row height */
+    font-size: 12px;
+}
+
+/* Add a gray background to the table header */
+#warehouses thead {
+    background-color: #0d3f3e;
+    color: white;
+    padding: 10px;
+    height: 30px;
+}
+
+/* Add zebra striping to the table rows */
+#warehouses tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#warehouses tbody tr:nth-child(odd) {
+    background-color: #bcf0ef;
+}
+
+button#downloadButton {
+    display: block;
+    max-width: 200px;
+    width: 90%;
+    padding: 5px 10px;
+    margin: 10px auto;
+    background-color: #44a1a0;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button#submit:downloadButton {
+    background-color: #2c6d6a;
+}
+

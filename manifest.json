@@ -1,0 +1,27 @@
+{
+  "name": "Bizportal",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "helps with Bizportal",
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://enchbizportal.gensoftcorp.com/Pages/BO/PrdMrkt/*"
+      ],
+      "css": ["getCosts.css"],
+      "js": ["getCosts.js"]
+    },
+    {
+      "matches": [
+        "http://enchbizportal.gensoftcorp.com/Pages/BO/Inventory/*"
+      ],
+      "css": ["getWarehouses.css"],
+      "js": ["getWarehouses.js"]
+    }
+   
+  ],
+  "action": {
+    "default_icon": "images/icon-16.png"
+  }
+}
