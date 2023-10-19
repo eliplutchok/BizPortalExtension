@@ -58,6 +58,13 @@ if (biz) {
                 let iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
                 let warehouse = iframeDocument.querySelector("#ctl01_ogTabList_ob_ogTabListBodyContainer > div.ob_gBICont > table > tbody > tr > td.ob_gC.ob_gC_Fc").innerText;
                 skuObject.warehouse = warehouse;
+
+                let warehouse_table = iframeDocument.querySelector("#ctl01_ogTabList_ob_ogTabListBodyContainer > div.ob_gBICont > table > tbody")
+                let rows = warehouse_table.querySelectorAll("tr");
+                if (rows.length > 1) {
+                    skuObject.warehouse = "Multiple Warehouses";
+                }
+
                 skuObject.stock = stock.innerText;
                 warehouses.push(skuObject);
                 console.log(i, warehouses);
